@@ -22,7 +22,7 @@
             <version>1.0.1</version>
         </dependency>
 
-        <!-- Tu librería con PriceData e IRemoteCalculatePrice -->
+        <!-- Librería con PriceData e IRemoteCalculatePrice -->
         <dependency>
             <groupId>cristianjimenez.rmi</groupId>
             <artifactId>price-lib-rmi</artifactId>

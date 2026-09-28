@@ -22,11 +22,11 @@ public class CalculatePriceImpl implements IRemoteCalculatePrice {
             result = data.getPrice() / data.getQuantity();
             data.setResult(result);
 
-            if (result < 1) {
+            if (result < 1000) {
                 data.setInterpretation("Very low unit price");
-            } else if (result >= 1 && result <= 10) {
+            } else if (result >= 1000 && result <= 10000) {
                 data.setInterpretation("Competitive unit price");
-            } else if (result > 10 && result <= 50) {
+            } else if (result > 10000 && result <= 50000) {
                 data.setInterpretation("Moderate unit price");
             } else {
                 data.setInterpretation("High unit price");
